@@ -1,7 +1,8 @@
 #include "personnage.hpp"
 
-perso::perso(float vie, std::string attaque, std::string defense) {
+perso::perso(float vie, float energie, std::string attaque, std::string defense) {
 	pt_de_vie = vie;
+	pt_energie = energie;
 	m_attaque = attaque;
 	m_defense = defense;
 }
@@ -20,7 +21,7 @@ std::string perso::attaque() {
 	}
 }
 std::string perso::defense() {
-
+	pt_energie = 100;
 	int esquive = rand() % 2;
 
 	if (esquive == 1) {
@@ -28,6 +29,14 @@ std::string perso::defense() {
 	}
 	else {
 		std::cout << "Le personnage ne parvient pas à esquiver l'attaque." << std::endl;
+	}
+	if (m_defense == "Blocage" && pt_energie >= 10 ) {
+		pt_de_vie += 6;
+		pt_energie -= 10;
+	}
+	else (m_defense == "stop" && pt_energie >= 10) {
+		pt_de_vie += 9;
+		pt_energie -= 10;
 	}
 }
 
