@@ -11,17 +11,19 @@ private :
     std::string m_defense;
 
 public:
-    perso(float vie, std::string attaque, std::string defense);
-    ~perso();
-    std::string attaque();
-    std::string defense();
+    void attaque();
+    void defense();
 };
 
 class hero : public perso {
-
+public :
+    hero(float vie, float energie);
+    ~hero();
 };
 
 class villain : public perso {
-
+public :
+    villain(float vie, float energie);
+    ~villain();
 };
 #endif

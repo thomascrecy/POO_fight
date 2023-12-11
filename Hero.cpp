@@ -1,26 +1,25 @@
 #include "personnage.hpp"
 
-perso::perso(float vie, float energie, std::string attaque, std::string defense) {
+hero::hero(float vie, float energie, std::string attaque, std::string defense) {
 	pt_de_vie = vie;
 	pt_energie = energie;
 	m_attaque = attaque;
 	m_defense = defense;
 }
 
-std::string perso::attaque() {
+std::string hero::attaque() {
 	float degats = 0.0;
-	if (m_attaque == "Nova Strike") {
+	if (m_attaque == "Genki Dama") {
 		degats = 35.0;
 	}
-	else if (m_attaque == "Death Beam") {
+	else if (m_attaque == "Kamehameha") {
 		degats = 12.0;
 	} 
 	else (m_attaque == "Regenerate") {
 		pt_de_vie += 10;
 	}
 }
-std::string perso::defense() {
-	pt_energie = 100;
+std::string hero::defense() {
 	int esquive = rand() % 2;
 
 	if (esquive == 1) {

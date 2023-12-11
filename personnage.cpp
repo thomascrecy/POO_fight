@@ -1,13 +1,13 @@
 #include "personnage.hpp"
 
-perso::perso(float vie, float energie, std::string attaque, std::string defense) {
+villain::villain(float vie, float energie, std::string attaque, std::string defense) {
 	pt_de_vie = vie;
 	pt_energie = energie;
 	m_attaque = attaque;
 	m_defense = defense;
 }
 
-std::string perso::attaque() {
+std::string villain::attaque() {
 	float degats = 0.0;
 	if (m_attaque == "Dissection") {
 		degats = 10.0;
@@ -19,7 +19,7 @@ std::string perso::attaque() {
 		degats = 30.0;
 	}
 }
-std::string perso::defense() {
+std::string villain::defense() {
 	pt_energie = 100;
 	int esquive = rand() % 2;
 
@@ -35,11 +35,11 @@ std::string perso::defense() {
 		pt_energie -= 5;
 	}
 	else if (m_defense == "Armure" && pt_energie >= 10) {
-		pt_de_vie -= 10;
+		degats -= 10;
 		pt_energie -= 10;
 	}
 	else if (m_defense == "Contre" && pt_energie >= 15) {
-		pt_de_vie -= 15;
+		degats -= 15;
 		pt_energie -= 15;
 	}
 }

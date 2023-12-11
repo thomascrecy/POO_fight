@@ -10,11 +10,11 @@ int main{
 	cin >> role;
 
 	if role = "Hero" {
-
+		hero Goku = hero(100.0f; 100.0f)
 	}
 
 	if role = "Villain" {
-
+		villain Sukuna = villain(100.0f; 100.0f)
 	}
 
 	return 0;
