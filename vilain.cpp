@@ -21,11 +21,12 @@ std::string perso::defense() {
 	int esquive = rand() % 2;
 
 	if (esquive == 1) {
-		std::cout << "Le personnage esquive l'attaque !" << std::endl;
+		std::cout << "Le personnage esquive l'attaque !!" << std::endl;
 	}
 	else {
 		std::cout << "Le personnage ne parvient pas à esquiver l'attaque." << std::endl;
 	}
 }
+
 
 
