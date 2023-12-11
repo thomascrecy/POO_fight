@@ -8,7 +8,6 @@ perso::perso(float vie, float energie, std::string attaque, std::string defense)
 }
 
 std::string perso::attaque() {
-	pt_de_vie = 100;
 	float degats = 0.0;
 	if (m_attaque == "Nova Strike") {
 		degats = 35.0;
