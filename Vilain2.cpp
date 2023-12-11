@@ -9,10 +9,10 @@ perso::perso(float vie, std::string attaque, std::string defense) {
 std::string perso::attaque() {
 	pt_de_vie = 100;
 	float degats = 0.0;
-	if (m_attaque == "poings") {
+	if (m_attaque == "Nova Strike") {
 		degats = 20.0;
 	}
-	else if (m_attaque == "expurgé(Hi no ko)") {
+	else if (m_attaque == "Death Beam") {
 		degats = 20.0;
 	}
 }
