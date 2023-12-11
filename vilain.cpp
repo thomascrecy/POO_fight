@@ -27,3 +27,6 @@ std::string perso::defense() {
 		std::cout << "Le personnage ne parvient pas à esquiver l'attaque." << std::endl;
 	}
 }
+
+
+toto
