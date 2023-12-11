@@ -14,6 +14,9 @@ std::string perso::attaque() {
 	}
 	else if (m_attaque == "Death Beam") {
 		degats = 12.0;
+	} 
+	else (m_attaque == "Regenerate") {
+		pt_de_vie += 10;
 	}
 }
 std::string perso::defense() {
