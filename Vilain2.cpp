@@ -10,10 +10,10 @@ std::string perso::attaque() {
 	pt_de_vie = 100;
 	float degats = 0.0;
 	if (m_attaque == "Nova Strike") {
-		degats = 20.0;
+		degats = 35.0;
 	}
 	else if (m_attaque == "Death Beam") {
-		degats = 20.0;
+		degats = 12.0;
 	}
 }
 std::string perso::defense() {
