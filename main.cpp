@@ -48,6 +48,7 @@ int main() {
         float degats_prisj2 = Goku.getAtt() - Sukuna.getDef();
 
         Sukuna.setPtVie(degats_prisj2);
+        Sukuna.getPtVie();
 
 
         if (Sukuna.getPtVie() <= 0) {
@@ -65,6 +66,7 @@ int main() {
         float degats_prisj1 = Sukuna.getAtt() - Goku.getDef();
 
         Goku.setPtVie(degats_prisj1);
+        Goku.getPtVie();
 
         if (Goku.getPtVie() <= 0) {
             cout << joueur2 << " a gagne" << endl;

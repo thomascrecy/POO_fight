@@ -1,7 +1,2 @@
-﻿  Hero.cpp
-  main.cpp
-  Villain.cpp
-  Génération de code en cours...
-C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(41): warning C4715: 'villain::defense' : les chemins de contrôle ne retournent pas tous une valeur
-C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(43): warning C4715: 'hero::defense' : les chemins de contrôle ne retournent pas tous une valeur
+﻿  main.cpp
   Poo fight.vcxproj -> C:\Users\crecy\Documents\Dev\poo_fight\Poo fight\x64\Debug\Poo fight.exe
