@@ -10,34 +10,37 @@ villain::~villain() {
 }
 
 std::string villain::attaque(std::string chosenAttack) {
-	float degats = 0.0;
 	if (chosenAttack == "Dissection") {
-		degats = 10.0;
+        valeur_degats = 10.0;
+        return "Attaque reussie";
 	}
 	else if (chosenAttack == "Laceration") {
-		degats = 20.0;
+        valeur_degats = 20.0;
+        return "Attaque reussie";
 	}
 	else if (chosenAttack == "Extension du territoire") {
-		degats = 30.0;
+        valeur_degats = 30.0;
+        return "Attaque reussie";
 	}
-	return "Attaque reussie";
+	return "Attaque ratee";
 }
 std::string villain::defense(std::string chosenDefense) {
     if (chosenDefense == "Bloque" && pt_energie >= 5) {
         valeur_defense = 5;
         pt_energie -= 5;
-        return "Défense réussie";
+        return "Defense reussie";
     }
     else if (chosenDefense == "Armure" && pt_energie >= 10) {
         valeur_defense = 10;
         pt_energie -= 10;
-        return "Défense réussie";
+        return "Defense reussie";
     }
     else if (chosenDefense == "Contre" && pt_energie >= 15) {
         valeur_defense = 15;
         pt_energie -= 15;
-        return "Défense réussie";
+        return "Defense reussie";
     }
+    return "Defense ratee";
 }
 
 float villain::getPtVie() {
