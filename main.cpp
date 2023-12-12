@@ -30,7 +30,7 @@ int main() {
         cout << joueur1 << " attaque" << endl;
         cout << joueur2 << " se defend" << endl;
 
-        Goku.attaque();
+        Goku.valeur_attaque - Sukuna
         Sukuna.defense();
 
         if (Sukuna.getPtVie() <= 0) {
