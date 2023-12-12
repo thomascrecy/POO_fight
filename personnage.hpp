@@ -14,6 +14,9 @@ public :
     hero(float vie, float energie);
     ~hero();
     float getPtVie();
+    void setPtVie(float pv_moins);
+    float getAtt();
+    float getDef();
     std::string attaque(std::string chosenAttack);
     std::string defense(std::string chosenDefense);
 };
@@ -28,6 +31,9 @@ public :
     villain(float vie, float energie);
     ~villain();
     float getPtVie();
+    void setPtVie(float pv_moins);
+    float getAtt();
+    float getDef();
     std::string attaque(std::string chosenAttack);
     std::string defense(std::string chosenDefense);
 };

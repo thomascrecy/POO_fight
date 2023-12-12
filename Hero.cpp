@@ -45,3 +45,14 @@ std::string hero::defense(std::string chosenDefense) {
 float hero::getPtVie() {
     return pt_de_vie;
 }
+
+void hero::setPtVie(float pv_moins) {
+    pt_de_vie -= pv_moins;
+}
+
+float hero::getAtt() {
+    return valeur_degats;
+}
+float hero::getDef() {
+    return valeur_defense;
+}

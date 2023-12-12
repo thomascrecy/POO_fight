@@ -134,6 +134,9 @@
   <ItemGroup>
     <ClInclude Include="..\..\personnage.hpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="A refaire.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -43,3 +43,14 @@ std::string villain::defense(std::string chosenDefense) {
 float villain::getPtVie() {
 	return pt_de_vie;
 }
+
+void villain::setPtVie(float pv_moins) {
+    pt_de_vie -= pv_moins;
+}
+
+float villain::getAtt() {
+    return valeur_degats;
+}
+float villain::getDef() {
+    return valeur_defense;
+}

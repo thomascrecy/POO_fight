@@ -1,0 +1,4 @@
+Afficher les attaques que le joueur peut choisir
+Le faire choisir avec 1,2,3 plutôt qu'en tapant le nom de l'attaque
+
+Faire en sorte que les attaques et les défenses marchent dans le main

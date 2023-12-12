@@ -27,21 +27,44 @@ int main() {
     villain Sukuna(100.0f, 100.0f);
 
     while (Goku.getPtVie() > 0 && Sukuna.getPtVie() > 0) {
-        cout << joueur1 << " attaque" << endl;
-        cout << joueur2 << " se defend" << endl;
+        std::string chosenAttackj1 = "";
+        std::string chosenDefensej1 = "";
+        std::string chosenAttackj2 = "";
+        std::string chosenDefensej2 = "";
 
-        Goku.valeur_attaque - Sukuna
-        Sukuna.defense();
+        float valeur_att1 = 0.0f;
+        float valeur_def1 = 0.0f;
+        float valeur_att2 = 0.0f;
+        float valeur_def2 = 0.0f;
+
+        cout << joueur1 << " choisi son attaque" << endl;
+        cin >> chosenAttackj1;
+        cout << joueur2 << " choisi sa defense" << endl;
+        cin >> chosenDefensej2;
+
+        Goku.attaque(chosenAttackj1);
+        Sukuna.defense(chosenDefensej2);
+
+        float degats_prisj2 = Goku.getAtt() - Sukuna.getDef();
+
+        Sukuna.setPtVie(degats_prisj2);
+
 
         if (Sukuna.getPtVie() <= 0) {
             cout << joueur1 << " a gagné !" << endl;
         }
 
-        cout << joueur2 << " attaque" << endl;
-        cout << joueur1 << " se defend" << endl;
+        cout << joueur2 << " choisi son attaque" << endl;
+        cin >> chosenAttackj2;
+        cout << joueur1 << " choisi sa defense" << endl;
+        cin >> chosenDefensej1;
 
-        Sukuna.attaque();
-        Goku.defense();
+        Sukuna.attaque(chosenAttackj2);
+        Goku.defense(chosenDefensej1);
+
+        float degats_prisj1 = Sukuna.getAtt() - Goku.getDef();
+
+        Goku.setPtVie(degats_prisj1);
 
         if (Goku.getPtVie() <= 0) {
             cout << joueur2 << " a gagne" << endl;
