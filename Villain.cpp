@@ -1,10 +1,12 @@
 #include "personnage.hpp"
 
-villain::villain(float vie, float energie, std::string attaque, std::string defense) {
+villain::villain(float vie, float energie) {
 	pt_de_vie = vie;
 	pt_energie = energie;
-	m_attaque = attaque;
-	m_defense = defense;
+}
+
+villain::~villain() {
+
 }
 
 std::string villain::attaque() {
@@ -36,4 +38,8 @@ std::string villain::defense() {
 		pt_energie -= 15;
 		return "Défense réussie";
 	}
+}
+
+float villain::getPtVie() {
+	return pt_de_vie;
 }

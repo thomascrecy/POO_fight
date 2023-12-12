@@ -47,5 +47,8 @@ int main() {
             cout << joueur2 << " a gagne" << endl;
         }
     }
+
+    /*delete Goku;
+    delete Sukuna;*/
     return 0;
 }

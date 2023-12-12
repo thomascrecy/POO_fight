@@ -4,18 +4,7 @@
 
 using namespace std;
 
-class perso {
-private :
-    float pt_de_vie;
-    std::string m_attaque;
-    std::string m_defense;
-
-public:
-    void attaque();
-    void defense();
-};
-
-class hero : public perso {
+class hero {
 private : 
     float pt_de_vie;
     float pt_energie;
@@ -25,9 +14,11 @@ public :
     hero(float vie, float energie);
     ~hero();
     float getPtVie();
+    void attaque();
+    void defense();
 };
 
-class villain : public perso {
+class villain {
 private :
     float pt_de_vie;
     float pt_energie;
@@ -37,6 +28,8 @@ public :
     villain(float vie, float energie);
     ~villain();
     float getPtVie();
+    void attaque();
+    void defense();
 };
 
 #endif
