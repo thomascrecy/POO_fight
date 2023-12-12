@@ -1,38 +1,51 @@
 #include "personnage.hpp"
+#include <iostream>
 
 using namespace std;
 
 int main() {
-	string joueur1 = "";
-	string joueur2 = "";
-	string rolej1 = "";
-	string rolej2 = "";
+    string joueur1 = "";
+    string joueur2 = "";
+    string rolej1 = "";
+    string rolej2 = "";
 
-	cout << "Saisissez votre nom" << endl;
-	cin >> joueur1;
-	cout << "Choisissez votre role : Hero ou Villain" << endl;
-	cin >> rolej1;
+    cout << "Saisissez le nom du Joueur 1" << endl;
+    cin >> joueur1;
+    cout << "Choisissez votre role : Hero ou Villain" << endl;
+    cin >> rolej1;
 
-	if (rolej1 = "Hero") {
-		hero Goku = hero(100.0f; 100.0f)
-	}
+    cout << "Saisissez le nom du Joueur 2" << endl;
+    cin >> joueur2;
+    if (rolej1 == "Hero") {
+        rolej2 = "Villain";
+    }
+    else {
+        rolej2 = "Hero";
+    }
 
-	if (rolej1 = "Villain") {
-		villain Sukuna = villain(100.0f; 100.0f)
-	}
+    hero Goku(100.0f, 100.0f);
+    villain Sukuna(100.0f, 100.0f);
 
-	cout << "Saisissez votre nom" << endl;
-	cin >> joueur2;
+    while (Goku.getPtVie() > 0 && Sukuna.getPtVie() > 0) {
+        cout << joueur1 << " attaque" << endl;
+        cout << joueur2 << " se defend" << endl;
 
-	if (rolej1 = "Hero") {
-		rolej2 = "Villain"
-			villain Sukuna = villain(100.0f; 100.0f)
-	}
+        Goku.attaque();
+        Sukuna.defense();
 
-	if (rolej1 = "Villain") {
-		rolej2 = "Hero"
-			hero Goku = hero(100.0f; 100.0f)
-	}
+        if (Sukuna.getPtVie() <= 0) {
+            cout << joueur1 << " a gagné !" << endl;
+        }
 
-	return 0;
+        cout << joueur2 << " attaque" << endl;
+        cout << joueur1 << " se defend" << endl;
+
+        Sukuna.attaque();
+        Goku.defense();
+
+        if (Goku.getPtVie() <= 0) {
+            cout << joueur2 << " a gagne" << endl;
+        }
+    }
+    return 0;
 }

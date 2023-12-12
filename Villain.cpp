@@ -18,28 +18,22 @@ std::string villain::attaque() {
 	else if (m_attaque == "Extension du territoire") {
 		degats = 30.0;
 	}
+	return "Attaque reussie";
 }
 std::string villain::defense() {
-	pt_energie = 100;
-	int esquive = rand() % 2;
-
-	if (esquive == 1) {
-		std::cout << "Le personnage esquive l'attaque !" << std::endl;
-	}
-	else {
-		std::cout << "Le personnage ne parvient pas à esquiver l'attaque." << std::endl;
-	}
-
 	if (m_defense == "Bloque" && pt_energie >= 5) {
 		degats -= 5;
 		pt_energie -= 5;
+		return "Défense réussie";
 	}
 	else if (m_defense == "Armure" && pt_energie >= 10) {
 		degats -= 10;
 		pt_energie -= 10;
+		return "Défense réussie";
 	}
 	else if (m_defense == "Contre" && pt_energie >= 15) {
 		degats -= 15;
 		pt_energie -= 15;
+		return "Défense réussie";
 	}
 }

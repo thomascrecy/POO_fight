@@ -24,6 +24,7 @@ private :
 public :
     hero(float vie, float energie);
     ~hero();
+    float getPtVie();
 };
 
 class villain : public perso {
@@ -35,5 +36,7 @@ private :
 public :
     villain(float vie, float energie);
     ~villain();
+    float getPtVie();
 };
+
 #endif
