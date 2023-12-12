@@ -1,0 +1,75 @@
+﻿  Hero.cpp
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(3,7): error C2511: 'hero::hero(float,float,std::string,std::string)' : impossible de trouver la fonction membre surchargée dans 'hero'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(18,7): message : voir la déclaration de 'hero'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(4,2): error C2597: référence non conforme à un membre non static 'hero::pt_de_vie'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(20,11): message : voir la déclaration de 'hero::pt_de_vie'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(5,2): error C2597: référence non conforme à un membre non static 'hero::pt_energie'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(21,11): message : voir la déclaration de 'hero::pt_energie'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(6,2): error C2597: référence non conforme à un membre non static 'hero::m_attaque'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(22,17): message : voir la déclaration de 'hero::m_attaque'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(7,2): error C2597: référence non conforme à un membre non static 'hero::m_defense'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(23,17): message : voir la déclaration de 'hero::m_defense'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(10,19): error C2509: 'attaque' : fonction membre non déclarée dans 'hero'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(18,7): message : voir la déclaration de 'hero'
+C:\Users\crecy\Documents\Dev\poo_fight\Hero.cpp(22,19): error C2509: 'defense' : fonction membre non déclarée dans 'hero'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(18,7): message : voir la déclaration de 'hero'
+  main.cpp
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(6,2): error C2275: « std::string » : expression attendue au lieu d’un type
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(6,9): error C2146: erreur de syntaxe : absence de ')' avant l'identificateur 'joueur1'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(11,7): error C2143: erreur de syntaxe : absence de ';' avant '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(11,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(11,7): error C2059: erreur de syntaxe : '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(12,6): error C2143: erreur de syntaxe : absence de ';' avant '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(12,6): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(12,6): error C2059: erreur de syntaxe : '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(13,7): error C2143: erreur de syntaxe : absence de ';' avant '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(13,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(13,2): error C2086: 'int cout' : redéfinition
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(11,2): message : voir la déclaration de 'cout'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(13,7): error C2059: erreur de syntaxe : '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(14,6): error C2143: erreur de syntaxe : absence de ';' avant '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(14,6): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(14,2): error C2086: 'int cin' : redéfinition
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(12,2): message : voir la déclaration de 'cin'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(14,6): error C2059: erreur de syntaxe : '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(16,2): error C2059: erreur de syntaxe : 'if'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(16,21): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(16,21): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(20,2): error C2059: erreur de syntaxe : 'if'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(20,24): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(20,24): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(24,7): error C2143: erreur de syntaxe : absence de ';' avant '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(24,7): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(24,2): error C2086: 'int cout' : redéfinition
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(11,2): message : voir la déclaration de 'cout'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(24,7): error C2059: erreur de syntaxe : '<<'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(25,6): error C2143: erreur de syntaxe : absence de ';' avant '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(25,6): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(25,2): error C2086: 'int cin' : redéfinition
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(12,2): message : voir la déclaration de 'cin'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(25,6): error C2059: erreur de syntaxe : '>>'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(27,2): error C2059: erreur de syntaxe : 'if'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(27,21): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(27,21): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(32,2): error C2059: erreur de syntaxe : 'if'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(32,24): error C2143: erreur de syntaxe : absence de ';' avant '{'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(32,24): error C2447: '{' : en-tête de fonction manquant (liste formelle à l'ancien format ?)
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(37,2): error C2059: erreur de syntaxe : 'return'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(38,1): error C2059: erreur de syntaxe : '}'
+C:\Users\crecy\Documents\Dev\poo_fight\main.cpp(38,1): error C2143: erreur de syntaxe : absence de ';' avant '}'
+  Villain.cpp
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(3,10): error C2511: 'villain::villain(float,float,std::string,std::string)' : impossible de trouver la fonction membre surchargée dans 'villain'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(29,7): message : voir la déclaration de 'villain'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(4,2): error C2597: référence non conforme à un membre non static 'villain::pt_de_vie'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(31,11): message : voir la déclaration de 'villain::pt_de_vie'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(5,2): error C2597: référence non conforme à un membre non static 'villain::pt_energie'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(32,11): message : voir la déclaration de 'villain::pt_energie'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(6,2): error C2597: référence non conforme à un membre non static 'villain::m_attaque'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(33,17): message : voir la déclaration de 'villain::m_attaque'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(7,2): error C2597: référence non conforme à un membre non static 'villain::m_defense'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(34,17): message : voir la déclaration de 'villain::m_defense'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(10,22): error C2509: 'attaque' : fonction membre non déclarée dans 'villain'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(29,7): message : voir la déclaration de 'villain'
+C:\Users\crecy\Documents\Dev\poo_fight\Villain.cpp(22,22): error C2509: 'defense' : fonction membre non déclarée dans 'villain'
+C:\Users\crecy\Documents\Dev\poo_fight\personnage.hpp(29,7): message : voir la déclaration de 'villain'
+  Génération de code en cours...

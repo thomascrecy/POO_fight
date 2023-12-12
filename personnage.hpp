@@ -16,12 +16,22 @@ public:
 };
 
 class hero : public perso {
+private : 
+    float pt_de_vie;
+    float pt_energie;
+    std::string m_attaque;
+    std::string m_defense;
 public :
     hero(float vie, float energie);
     ~hero();
 };
 
 class villain : public perso {
+private :
+    float pt_de_vie;
+    float pt_energie;
+    std::string m_attaque;
+    std::string m_defense;
 public :
     villain(float vie, float energie);
     ~villain();
